@@ -1,39 +1,329 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="1" failures="1" errors="1" skipped="0">
-  <testsuite name="web driver io task 3" timestamp="2024-04-13T21:01:34" time="7.471" tests="1" failures="1" errors="1" skipped="0">
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="web driver io task 3" timestamp="2024-04-14T00:04:51" time="37.923" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="web driver io task 3"/>
-      <property name="capabilities" value="chrome.123_0_6312_107.windows"/>
+      <property name="capabilities" value="firefox.124_0_2.windows"/>
       <property name="file" value="file:///C:/Users/vaheo/Desktop/EPAM_QA/Automation/wdio_4/src/tests/task4.tests.js"/>
     </properties>
-    <testcase classname="chrome.123_0_6312_107.windows.web_driver_io_task_3" name="calculating the estimate" time="7.467">
-      <failure/>
-      <error message="Cannot read properties of undefined (reading 'open')"/>
+    <testcase classname="firefox.124_0_2.windows.web_driver_io_task_3" name="calculating the estimate" time="37.921">
       <system-out><![CDATA[
-COMMAND: POST /session/2074c0ee65d39d15e60fcdb70d56eebb/url - {"url":"https://cloud.google.com/"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/url - {"url":"https://cloud.google.com/"}
 RESULT: {"url":"https://cloud.google.com/"}
-COMMAND: POST /session/2074c0ee65d39d15e60fcdb70d56eebb/element - {"using":"css selector","value":".YSM5S"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":".YSM5S"}
 RESULT: {"using":"css selector","value":".YSM5S"}
-COMMAND: POST /session/2074c0ee65d39d15e60fcdb70d56eebb/element/f.C4CA9DD457EF9D3CF117BDBD47FE5F27.d.66214A1BDF38617D108203F9FFA6888E.e.36/click - {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/3a12dca0-d3a1-4f10-b051-aa3a98384000/click - {}
 RESULT: {}
-COMMAND: POST /session/2074c0ee65d39d15e60fcdb70d56eebb/element - {"using":"css selector","value":"input[class='qdOxv-fmcmS-wGMbrd']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"input[class='qdOxv-fmcmS-wGMbrd']"}
 RESULT: {"using":"css selector","value":"input[class='qdOxv-fmcmS-wGMbrd']"}
-COMMAND: POST /session/2074c0ee65d39d15e60fcdb70d56eebb/element/f.C4CA9DD457EF9D3CF117BDBD47FE5F27.d.66214A1BDF38617D108203F9FFA6888E.e.9/clear - {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/df1e042f-8b20-401d-beac-dae7e8ad86ee/clear - {}
 RESULT: {}
-COMMAND: POST /session/2074c0ee65d39d15e60fcdb70d56eebb/element/f.C4CA9DD457EF9D3CF117BDBD47FE5F27.d.66214A1BDF38617D108203F9FFA6888E.e.9/value - {"text":"Google Cloud Platform Pricing Calculator"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/df1e042f-8b20-401d-beac-dae7e8ad86ee/value - {"text":"Google Cloud Platform Pricing Calculator"}
 RESULT: {"text":"Google Cloud Platform Pricing Calculator"}
-COMMAND: POST /session/2074c0ee65d39d15e60fcdb70d56eebb/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
 RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: GET /session/2074c0ee65d39d15e60fcdb70d56eebb/screenshot - {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/url - {"url":"https://cloud.google.com/products/calculator-legacy?hl=es-419"}
+RESULT: {"url":"https://cloud.google.com/products/calculator-legacy?hl=es-419"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"devsite-iframe iframe"}
+RESULT: {"using":"css selector","value":"devsite-iframe iframe"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/elements - {"using":"css selector","value":"devsite-iframe iframe"}
+RESULT: {"using":"css selector","value":"devsite-iframe iframe"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/frame - {"id":{"sessionId":"d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd","elementId":"a8eb5922-3d03-42e5-8403-9399f5886444","element-6066-11e4-a52e-4f735466cecf":"a8eb5922-3d03-42e5-8403-9399f5886444","selector":"devsite-iframe iframe","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"124.0.2","moz:accessibilityChecks":false,"moz:buildID":"20240401114208","moz:geckodriverVersion":"0.34.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":9000,"moz:profile":"C:\\Users\\vaheo\\AppData\\Local\\Temp\\rust_mozprofiletJ6ZTO","_":"10 more keys: [\"moz:shutdownTimeout\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false,"isShadowElement":false}}
+RESULT: {"id":{"sessionId":"d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd","elementId":"a8eb5922-3d03-42e5-8403-9399f5886444","element-6066-11e4-a52e-4f735466cecf":"a8eb5922-3d03-42e5-8403-9399f5886444","selector":"devsite-iframe iframe","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"124.0.2","moz:accessibilityChecks":false,"moz:buildID":"20240401114208","moz:geckodriverVersion":"0.34.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":9000,"moz:profile":"C:\\Users\\vaheo\\AppData\\Local\\Temp\\rust_mozprofiletJ6ZTO","_":"10 more keys: [\"moz:shutdownTimeout\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false,"isShadowElement":false}}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"#myFrame"}
+RESULT: {"using":"css selector","value":"#myFrame"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/elements - {"using":"css selector","value":"#myFrame"}
+RESULT: {"using":"css selector","value":"#myFrame"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/frame - {"id":{"sessionId":"d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd","elementId":"db3324b5-7147-4ba1-8da3-80f796c1cbca","element-6066-11e4-a52e-4f735466cecf":"db3324b5-7147-4ba1-8da3-80f796c1cbca","selector":"#myFrame","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"124.0.2","moz:accessibilityChecks":false,"moz:buildID":"20240401114208","moz:geckodriverVersion":"0.34.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":9000,"moz:profile":"C:\\Users\\vaheo\\AppData\\Local\\Temp\\rust_mozprofiletJ6ZTO","_":"10 more keys: [\"moz:shutdownTimeout\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false,"isShadowElement":false}}
+RESULT: {"id":{"sessionId":"d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd","elementId":"db3324b5-7147-4ba1-8da3-80f796c1cbca","element-6066-11e4-a52e-4f735466cecf":"db3324b5-7147-4ba1-8da3-80f796c1cbca","selector":"#myFrame","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"124.0.2","moz:accessibilityChecks":false,"moz:buildID":"20240401114208","moz:geckodriverVersion":"0.34.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":9000,"moz:profile":"C:\\Users\\vaheo\\AppData\\Local\\Temp\\rust_mozprofiletJ6ZTO","_":"10 more keys: [\"moz:shutdownTimeout\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false,"isShadowElement":false}}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-tab-item[@id='tab-item-1']"}
+RESULT: {"using":"xpath","value":"//md-tab-item[@id='tab-item-1']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/1d42ea00-233e-47ea-975e-c42f9a25697c/click - {}
 RESULT: {}
-COMMAND: DELETE /session/2074c0ee65d39d15e60fcdb70d56eebb - {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//input[@id=\"input_100\"]"}
+RESULT: {"using":"xpath","value":"//input[@id=\"input_100\"]"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/87e4ce37-40c7-4e29-a231-0e35e6e02fc4/clear - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/87e4ce37-40c7-4e29-a231-0e35e6e02fc4/value - {"text":"4"}
+RESULT: {"text":"4"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"#select_113"}
+RESULT: {"using":"css selector","value":"#select_113"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/d43c86a9-a927-4655-bb66-c1c15a75976a/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"#select_option_102"}
+RESULT: {"using":"css selector","value":"#select_option_102"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3841daba-9d4d-48fb-a9fa-1d1f0bac9e7f","ELEMENT":"3841daba-9d4d-48fb-a9fa-1d1f0bac9e7f"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3841daba-9d4d-48fb-a9fa-1d1f0bac9e7f","ELEMENT":"3841daba-9d4d-48fb-a9fa-1d1f0bac9e7f"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3841daba-9d4d-48fb-a9fa-1d1f0bac9e7f","ELEMENT":"3841daba-9d4d-48fb-a9fa-1d1f0bac9e7f"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3841daba-9d4d-48fb-a9fa-1d1f0bac9e7f","ELEMENT":"3841daba-9d4d-48fb-a9fa-1d1f0bac9e7f"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/3841daba-9d4d-48fb-a9fa-1d1f0bac9e7f/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"#select_117"}
+RESULT: {"using":"css selector","value":"#select_117"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/4eb9f7be-5623-4773-9f36-2502e52695e3/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-option[@id='select_option_115']"}
+RESULT: {"using":"xpath","value":"//md-option[@id='select_option_115']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c001cb4d-529d-4765-89ad-3593b773fd3a","ELEMENT":"c001cb4d-529d-4765-89ad-3593b773fd3a"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c001cb4d-529d-4765-89ad-3593b773fd3a","ELEMENT":"c001cb4d-529d-4765-89ad-3593b773fd3a"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c001cb4d-529d-4765-89ad-3593b773fd3a","ELEMENT":"c001cb4d-529d-4765-89ad-3593b773fd3a"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c001cb4d-529d-4765-89ad-3593b773fd3a","ELEMENT":"c001cb4d-529d-4765-89ad-3593b773fd3a"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/c001cb4d-529d-4765-89ad-3593b773fd3a/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"#select_123"}
+RESULT: {"using":"css selector","value":"#select_123"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/67090d4e-925a-46bf-8ed9-a06a9f764cb2/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-option[@id='select_option_119']/div"}
+RESULT: {"using":"xpath","value":"//md-option[@id='select_option_119']/div"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e18af7e9-42a3-4bf5-8ef7-4f63809b4c82","ELEMENT":"e18af7e9-42a3-4bf5-8ef7-4f63809b4c82"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e18af7e9-42a3-4bf5-8ef7-4f63809b4c82","ELEMENT":"e18af7e9-42a3-4bf5-8ef7-4f63809b4c82"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e18af7e9-42a3-4bf5-8ef7-4f63809b4c82","ELEMENT":"e18af7e9-42a3-4bf5-8ef7-4f63809b4c82"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e18af7e9-42a3-4bf5-8ef7-4f63809b4c82","ELEMENT":"e18af7e9-42a3-4bf5-8ef7-4f63809b4c82"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/e18af7e9-42a3-4bf5-8ef7-4f63809b4c82/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-select-value[@id='select_value_label_95']"}
+RESULT: {"using":"xpath","value":"//md-select-value[@id='select_value_label_95']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/3423e530-cad1-4240-b974-1072d9d38908/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-option[@id='select_option_224']"}
+RESULT: {"using":"xpath","value":"//md-option[@id='select_option_224']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d8ea28ec-957d-4c59-866f-57996271d2e4","ELEMENT":"d8ea28ec-957d-4c59-866f-57996271d2e4"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d8ea28ec-957d-4c59-866f-57996271d2e4","ELEMENT":"d8ea28ec-957d-4c59-866f-57996271d2e4"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d8ea28ec-957d-4c59-866f-57996271d2e4","ELEMENT":"d8ea28ec-957d-4c59-866f-57996271d2e4"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d8ea28ec-957d-4c59-866f-57996271d2e4","ELEMENT":"d8ea28ec-957d-4c59-866f-57996271d2e4"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/d8ea28ec-957d-4c59-866f-57996271d2e4/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-select-value[@id='select_value_label_96']"}
+RESULT: {"using":"xpath","value":"//md-select-value[@id='select_value_label_96']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/cbb2dad0-a49d-4184-8d76-fe11d00f2918/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-option[@id='select_option_474']"}
+RESULT: {"using":"xpath","value":"//md-option[@id='select_option_474']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"dea2ba02-0867-4cd6-88de-154e3c231f37","ELEMENT":"dea2ba02-0867-4cd6-88de-154e3c231f37"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"dea2ba02-0867-4cd6-88de-154e3c231f37","ELEMENT":"dea2ba02-0867-4cd6-88de-154e3c231f37"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"dea2ba02-0867-4cd6-88de-154e3c231f37","ELEMENT":"dea2ba02-0867-4cd6-88de-154e3c231f37"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"dea2ba02-0867-4cd6-88de-154e3c231f37","ELEMENT":"dea2ba02-0867-4cd6-88de-154e3c231f37"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/dea2ba02-0867-4cd6-88de-154e3c231f37/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/elements - {"using":"css selector","value":".md-container.md-ink-ripple"}
+RESULT: {"using":"css selector","value":".md-container.md-ink-ripple"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/9550e5a5-2731-4ef1-ab0b-696be4bb6e65/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"#select_510"}
+RESULT: {"using":"css selector","value":"#select_510"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/d3a7fed6-a05e-4021-8b27-66e20e456a96/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"#select_option_517"}
+RESULT: {"using":"css selector","value":"#select_option_517"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"429a636f-bbb4-4b05-8faa-f1d832f4482e","ELEMENT":"429a636f-bbb4-4b05-8faa-f1d832f4482e"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"429a636f-bbb4-4b05-8faa-f1d832f4482e","ELEMENT":"429a636f-bbb4-4b05-8faa-f1d832f4482e"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"429a636f-bbb4-4b05-8faa-f1d832f4482e","ELEMENT":"429a636f-bbb4-4b05-8faa-f1d832f4482e"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"429a636f-bbb4-4b05-8faa-f1d832f4482e","ELEMENT":"429a636f-bbb4-4b05-8faa-f1d832f4482e"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/429a636f-bbb4-4b05-8faa-f1d832f4482e/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"#select_512"}
+RESULT: {"using":"css selector","value":"#select_512"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/511144e2-1280-4e83-ba4f-961fc98e9ae1/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"#select_option_520"}
+RESULT: {"using":"css selector","value":"#select_option_520"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3f6ba342-7dfa-4e7b-ace8-fe8239a2f6d4","ELEMENT":"3f6ba342-7dfa-4e7b-ace8-fe8239a2f6d4"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3f6ba342-7dfa-4e7b-ace8-fe8239a2f6d4","ELEMENT":"3f6ba342-7dfa-4e7b-ace8-fe8239a2f6d4"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3f6ba342-7dfa-4e7b-ace8-fe8239a2f6d4","ELEMENT":"3f6ba342-7dfa-4e7b-ace8-fe8239a2f6d4"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3f6ba342-7dfa-4e7b-ace8-fe8239a2f6d4","ELEMENT":"3f6ba342-7dfa-4e7b-ace8-fe8239a2f6d4"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/3f6ba342-7dfa-4e7b-ace8-fe8239a2f6d4/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-select-value[@id='select_value_label_468']"}
+RESULT: {"using":"xpath","value":"//md-select-value[@id='select_value_label_468']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/edeb7ebd-9bc9-41c5-98c6-a02325254ca0/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-option[@id='select_option_495']"}
+RESULT: {"using":"xpath","value":"//md-option[@id='select_option_495']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d752f90f-ff0d-44fb-a43f-c20b589497f5","ELEMENT":"d752f90f-ff0d-44fb-a43f-c20b589497f5"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d752f90f-ff0d-44fb-a43f-c20b589497f5","ELEMENT":"d752f90f-ff0d-44fb-a43f-c20b589497f5"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d752f90f-ff0d-44fb-a43f-c20b589497f5","ELEMENT":"d752f90f-ff0d-44fb-a43f-c20b589497f5"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d752f90f-ff0d-44fb-a43f-c20b589497f5","ELEMENT":"d752f90f-ff0d-44fb-a43f-c20b589497f5"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/d752f90f-ff0d-44fb-a43f-c20b589497f5/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-select-value[@id='select_value_label_98']"}
+RESULT: {"using":"xpath","value":"//md-select-value[@id='select_value_label_98']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/ce1e2f6e-d96d-4345-938d-3186cd39b44b/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-option[@id='select_option_269']"}
+RESULT: {"using":"xpath","value":"//md-option[@id='select_option_269']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7a17ec6c-96af-418c-84f3-d60471539b58","ELEMENT":"7a17ec6c-96af-418c-84f3-d60471539b58"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7a17ec6c-96af-418c-84f3-d60471539b58","ELEMENT":"7a17ec6c-96af-418c-84f3-d60471539b58"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7a17ec6c-96af-418c-84f3-d60471539b58","ELEMENT":"7a17ec6c-96af-418c-84f3-d60471539b58"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7a17ec6c-96af-418c-84f3-d60471539b58","ELEMENT":"7a17ec6c-96af-418c-84f3-d60471539b58"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/7a17ec6c-96af-418c-84f3-d60471539b58/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-select-value[@id='select_value_label_99']"}
+RESULT: {"using":"xpath","value":"//md-select-value[@id='select_value_label_99']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/fd49d916-19ab-4043-8310-422130464f07/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//md-option[@id='select_option_138']"}
+RESULT: {"using":"xpath","value":"//md-option[@id='select_option_138']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7b3f34c2-f21b-4e50-8915-d6504a4f55a3","ELEMENT":"7b3f34c2-f21b-4e50-8915-d6504a4f55a3"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7b3f34c2-f21b-4e50-8915-d6504a4f55a3","ELEMENT":"7b3f34c2-f21b-4e50-8915-d6504a4f55a3"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7b3f34c2-f21b-4e50-8915-d6504a4f55a3","ELEMENT":"7b3f34c2-f21b-4e50-8915-d6504a4f55a3"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7b3f34c2-f21b-4e50-8915-d6504a4f55a3","ELEMENT":"7b3f34c2-f21b-4e50-8915-d6504a4f55a3"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/7b3f34c2-f21b-4e50-8915-d6504a4f55a3/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//form[@name='ComputeEngineForm']//button[@type='button'][normalize-space()='Add to Estimate']"}
+RESULT: {"using":"xpath","value":"//form[@name='ComputeEngineForm']//button[@type='button'][normalize-space()='Add to Estimate']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"2e026543-4059-4f86-af23-dfdf8928091d","ELEMENT":"2e026543-4059-4f86-af23-dfdf8928091d"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"2e026543-4059-4f86-af23-dfdf8928091d","ELEMENT":"2e026543-4059-4f86-af23-dfdf8928091d"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"2e026543-4059-4f86-af23-dfdf8928091d","ELEMENT":"2e026543-4059-4f86-af23-dfdf8928091d"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"2e026543-4059-4f86-af23-dfdf8928091d","ELEMENT":"2e026543-4059-4f86-af23-dfdf8928091d"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/2e026543-4059-4f86-af23-dfdf8928091d/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//div[@class=\"cpc-cart-total\"]/h2//b[contains(text(), \"Total Estimated Cost\")]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"cpc-cart-total\"]/h2//b[contains(text(), \"Total Estimated Cost\")]"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/elements - {"using":"xpath","value":"//div[@class=\"cpc-cart-total\"]/h2//b[contains(text(), \"Total Estimated Cost\")]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"cpc-cart-total\"]/h2//b[contains(text(), \"Total Estimated Cost\")]"}
+COMMAND: GET /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/cd71ff4f-533b-4f3b-8539-a808cd6e6992/text - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//button[@id='Email Estimate']"}
+RESULT: {"using":"xpath","value":"//button[@id='Email Estimate']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"56887083-e617-45ac-a9f2-9c3278cc58b0","ELEMENT":"56887083-e617-45ac-a9f2-9c3278cc58b0"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"56887083-e617-45ac-a9f2-9c3278cc58b0","ELEMENT":"56887083-e617-45ac-a9f2-9c3278cc58b0"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"56887083-e617-45ac-a9f2-9c3278cc58b0","ELEMENT":"56887083-e617-45ac-a9f2-9c3278cc58b0"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"56887083-e617-45ac-a9f2-9c3278cc58b0","ELEMENT":"56887083-e617-45ac-a9f2-9c3278cc58b0"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/56887083-e617-45ac-a9f2-9c3278cc58b0/click - {}
+RESULT: {}
+COMMAND: GET /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://yopmail.com/","",""]}
+RESULT: {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://yopmail.com/","",""]}
+COMMAND: GET /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/window/handles - {}
+RESULT: {}
+COMMAND: GET /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/window - {"handle":"7b91425b-0207-4f5a-8b4e-838b7a5df12f"}
+RESULT: {"handle":"7b91425b-0207-4f5a-8b4e-838b7a5df12f"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"body"}
+RESULT: {"using":"css selector","value":"body"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/actions - {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/actions - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//h3[normalize-space()='Random Email generator']"}
+RESULT: {"using":"xpath","value":"//h3[normalize-space()='Random Email generator']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//h3[normalize-space()='Random Email generator']"}
+RESULT: {"using":"xpath","value":"//h3[normalize-space()='Random Email generator']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//h3[normalize-space()='Random Email generator']"}
+RESULT: {"using":"xpath","value":"//h3[normalize-space()='Random Email generator']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//h3[normalize-space()='Random Email generator']"}
+RESULT: {"using":"xpath","value":"//h3[normalize-space()='Random Email generator']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"08607db1-f190-43fb-ab31-19c147b05322","ELEMENT":"08607db1-f190-43fb-ab31-19c147b05322"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"08607db1-f190-43fb-ab31-19c147b05322","ELEMENT":"08607db1-f190-43fb-ab31-19c147b05322"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"08607db1-f190-43fb-ab31-19c147b05322","ELEMENT":"08607db1-f190-43fb-ab31-19c147b05322"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"08607db1-f190-43fb-ab31-19c147b05322","ELEMENT":"08607db1-f190-43fb-ab31-19c147b05322"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/08607db1-f190-43fb-ab31-19c147b05322/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//span[@class='notmobile'][normalize-space()='Copy to clipboard']"}
+RESULT: {"using":"xpath","value":"//span[@class='notmobile'][normalize-space()='Copy to clipboard']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"105466ab-6871-4708-b96c-b1f50f5e961f","ELEMENT":"105466ab-6871-4708-b96c-b1f50f5e961f"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"105466ab-6871-4708-b96c-b1f50f5e961f","ELEMENT":"105466ab-6871-4708-b96c-b1f50f5e961f"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"105466ab-6871-4708-b96c-b1f50f5e961f","ELEMENT":"105466ab-6871-4708-b96c-b1f50f5e961f"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"105466ab-6871-4708-b96c-b1f50f5e961f","ELEMENT":"105466ab-6871-4708-b96c-b1f50f5e961f"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/105466ab-6871-4708-b96c-b1f50f5e961f/click - {}
+RESULT: {}
+COMMAND: GET /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/window - {"handle":"96b2a83f-65e2-4c6b-a54e-f75e0ed405a8"}
+RESULT: {"handle":"96b2a83f-65e2-4c6b-a54e-f75e0ed405a8"}
+COMMAND: GET /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/url - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/elements - {"using":"css selector","value":"iframe"}
+RESULT: {"using":"css selector","value":"iframe"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/frame - {"id":{"element-6066-11e4-a52e-4f735466cecf":"a8eb5922-3d03-42e5-8403-9399f5886444"}}
+RESULT: {"id":{"element-6066-11e4-a52e-4f735466cecf":"a8eb5922-3d03-42e5-8403-9399f5886444"}}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/elements - {"using":"css selector","value":"iframe"}
+RESULT: {"using":"css selector","value":"iframe"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/frame - {"id":{"element-6066-11e4-a52e-4f735466cecf":"db3324b5-7147-4ba1-8da3-80f796c1cbca"}}
+RESULT: {"id":{"element-6066-11e4-a52e-4f735466cecf":"db3324b5-7147-4ba1-8da3-80f796c1cbca"}}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//input[@id='input_620']"}
+RESULT: {"using":"xpath","value":"//input[@id='input_620']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"77f9b808-1f9a-4159-81e4-0b634274669c","ELEMENT":"77f9b808-1f9a-4159-81e4-0b634274669c"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"77f9b808-1f9a-4159-81e4-0b634274669c","ELEMENT":"77f9b808-1f9a-4159-81e4-0b634274669c"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"77f9b808-1f9a-4159-81e4-0b634274669c","ELEMENT":"77f9b808-1f9a-4159-81e4-0b634274669c"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"77f9b808-1f9a-4159-81e4-0b634274669c","ELEMENT":"77f9b808-1f9a-4159-81e4-0b634274669c"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/77f9b808-1f9a-4159-81e4-0b634274669c/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/actions - {"actions":[{"id":"action3","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"keyDown","value":"v"},{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""},{"type":"keyUp","value":"v"},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action3","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"keyDown","value":"v"},{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""},{"type":"keyUp","value":"v"},{"type":"keyUp","value":""}]}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//button[normalize-space()='Send Email']"}
+RESULT: {"using":"xpath","value":"//button[normalize-space()='Send Email']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f4aad317-db4c-428c-affd-4c5b714b7b66","ELEMENT":"f4aad317-db4c-428c-affd-4c5b714b7b66"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f4aad317-db4c-428c-affd-4c5b714b7b66","ELEMENT":"f4aad317-db4c-428c-affd-4c5b714b7b66"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f4aad317-db4c-428c-affd-4c5b714b7b66","ELEMENT":"f4aad317-db4c-428c-affd-4c5b714b7b66"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f4aad317-db4c-428c-affd-4c5b714b7b66","ELEMENT":"f4aad317-db4c-428c-affd-4c5b714b7b66"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/f4aad317-db4c-428c-affd-4c5b714b7b66/click - {}
+RESULT: {}
+COMMAND: GET /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/window - {"handle":"96b2a83f-65e2-4c6b-a54e-f75e0ed405a8"}
+RESULT: {"handle":"96b2a83f-65e2-4c6b-a54e-f75e0ed405a8"}
+COMMAND: GET /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/url - {}
+RESULT: {}
+COMMAND: GET /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/title - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (() => window.name).apply(null, arguments)","args":[]}
+RESULT: {"script":"return (() => window.name).apply(null, arguments)","args":[]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/window - {"handle":"7b91425b-0207-4f5a-8b4e-838b7a5df12f"}
+RESULT: {"handle":"7b91425b-0207-4f5a-8b4e-838b7a5df12f"}
+COMMAND: GET /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/url - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"xpath","value":"//span[normalize-space()='Check Inbox']"}
+RESULT: {"using":"xpath","value":"//span[normalize-space()='Check Inbox']"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325","ELEMENT":"e2bc8ff4-1889-4a6a-a06c-869cb86c9325"}]}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/e2bc8ff4-1889-4a6a-a06c-869cb86c9325/click - {}
+RESULT: {}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"#ifmail"}
+RESULT: {"using":"css selector","value":"#ifmail"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/elements - {"using":"css selector","value":"#ifmail"}
+RESULT: {"using":"css selector","value":"#ifmail"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/frame - {"id":{"sessionId":"d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd","elementId":"9eab619a-6ad8-4829-8043-6a3e90c9f8bb","element-6066-11e4-a52e-4f735466cecf":"9eab619a-6ad8-4829-8043-6a3e90c9f8bb","selector":"#ifmail","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"124.0.2","moz:accessibilityChecks":false,"moz:buildID":"20240401114208","moz:geckodriverVersion":"0.34.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":9000,"moz:profile":"C:\\Users\\vaheo\\AppData\\Local\\Temp\\rust_mozprofiletJ6ZTO","_":"10 more keys: [\"moz:shutdownTimeout\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false,"isShadowElement":false}}
+RESULT: {"id":{"sessionId":"d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd","elementId":"9eab619a-6ad8-4829-8043-6a3e90c9f8bb","element-6066-11e4-a52e-4f735466cecf":"9eab619a-6ad8-4829-8043-6a3e90c9f8bb","selector":"#ifmail","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"124.0.2","moz:accessibilityChecks":false,"moz:buildID":"20240401114208","moz:geckodriverVersion":"0.34.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":9000,"moz:profile":"C:\\Users\\vaheo\\AppData\\Local\\Temp\\rust_mozprofiletJ6ZTO","_":"10 more keys: [\"moz:shutdownTimeout\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false,"isShadowElement":false}}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element - {"using":"css selector","value":"tbody tr td:nth-child(4)"}
+RESULT: {"using":"css selector","value":"tbody tr td:nth-child(4)"}
+COMMAND: POST /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/elements - {"using":"css selector","value":"tbody tr td:nth-child(4)"}
+COMMAND: GET /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd/element/edc5e4f1-2e1c-41cc-a42b-7a044cbdb0c0/text - {}
+RESULT: {}
+RESULT: {"using":"css selector","value":"tbody tr td:nth-child(4)"}
+COMMAND: DELETE /session/d3ce2a7c-ef93-46fd-ab24-bbf8a0db9fdd - {}
 RESULT: {}
 ]]></system-out>
-      <system-err><![CDATA[
-TypeError: Cannot read properties of undefined (reading 'open')
-    at Context.<anonymous> (C:\Users\vaheo\Desktop\EPAM_QA\Automation\wdio_4\src\tests\task4.tests.js:13:35)
-]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>
