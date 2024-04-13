@@ -135,7 +135,7 @@ describe('web driver io task 3', async () => {
         await sendEmailButton.click();
 
         //Wait for the cost estimate email and check that the emailed 'Total Estimated Monthly Cost' matches the result in the calculator.
-        await browser.switchWindow('yopmail.com');
+        await browser.switchWindow('yopmail.com/');
         const checkInbox = await pages('email').checkInbox;
         await checkInbox.waitForClickable();
         await browser.pause(10000);

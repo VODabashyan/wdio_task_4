@@ -1,4 +1,5 @@
 const { existsSync, mkdirSync } = require('fs');
+const { join } = require('path');
 
 exports.config = {
     //
@@ -237,7 +238,8 @@ exports.config = {
         // take a screenshot anytime a test fails and throws an error
         if (result.error) {
             console.log(`Screenshot for the failed test ${test.title} is saved`);
-            const filename = test.title + '.png';
+            const date_time = new Date().toString().replace(/:/g, "-");
+            const filename = `${test.title}_${date_time}.png`;
             const dirPath = './artifacts/screenshots/';
 
             if (!existsSync(dirPath)) {
