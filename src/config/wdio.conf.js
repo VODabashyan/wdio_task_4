@@ -1,3 +1,5 @@
+const { existsSync, mkdirSync } = require('fs');
+
 exports.config = {
     //
     // ====================
@@ -109,7 +111,7 @@ exports.config = {
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'mocha',
-    
+
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -123,7 +125,12 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['spec', ['junit', {
+        outputDir: './report',
+        outputFileFormat: function (options) {
+            return `results-${options.cid}.xml`
+        },
+    }]],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -226,8 +233,21 @@ exports.config = {
      * @param {boolean} result.passed    true if test has passed, otherwise false
      * @param {object}  result.retries   information about spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
-    // },
+    afterTest: async (test, context, result) => {
+        // take a screenshot anytime a test fails and throws an error
+        if (result.error) {
+            console.log(`Screenshot for the failed test ${test.title} is saved`);
+            const filename = test.title + '.png';
+            const dirPath = './artifacts/screenshots/';
+
+            if (!existsSync(dirPath)) {
+                mkdirSync(dirPath, {
+                    recursive: true,
+                });
+            }
+            await browser.saveScreenshot(dirPath + filename);
+        }
+    },
 
 
     /**
