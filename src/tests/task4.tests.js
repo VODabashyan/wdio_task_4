@@ -6,21 +6,21 @@ describe('web driver io task 3', async () => {
     });
 
     it('calculating the estimate', async () => {
-        await pages('home').searchBar.click();
-        await pages('home').searchBarInput.setValue('Google Cloud Platform Pricing Calculator');
+        await pages('home').searchBar.searchBarLine.click();
+        await pages('home').searchBar.searchBarInput.setValue('Google Cloud Platform Pricing Calculator');
         await browser.keys("\uE007");
 
         await pages('calculator').open();
 
-        const iframe1 = await iframes('first').element;
+        const iframe1 = await pages('home').iframe1;
         await iframe1.waitForExist();
         await browser.switchToFrame(iframe1);
-        const iframe2 = await iframes('second').element;
+        const iframe2 = await pages('calculator').iframe2;
         await iframe2.waitForExist();
         await browser.switchToFrame(iframe2);
 
         //Number of instances: 4
-        await pages('home').topMenu.computeEngine.click();
+        await pages('calculator').topMenu.computeEngine.click();
         await pages('calculator').computeEngine.numberOfInstancesInput.setValue(4);
 
         //Operating System / Software: Free: Debian, CentOS, CoreOS, Ubuntu, or another User-Provided OS
@@ -113,10 +113,11 @@ describe('web driver io task 3', async () => {
 
         //Return to the calculator and enter the above email into the email field.
         await browser.switchWindow('cloud.google.com/products/calculator-legacy');
-        const iframe3 = await browser.findElements('css selector', 'iframe')
+        await browser.switchToFrame(iframe1);
+        
+        const iframe3 = await pages('calculator').iframe3;
         await browser.switchToFrame(iframe3[0]);
-        const iframe4 = await browser.findElements('css selector', 'iframe')
-        await browser.switchToFrame(iframe4[0]);
+
         const emailField = await pages('calculator').emailForm.emailField;
         await emailField.waitForClickable();
         await emailField.click();
@@ -134,9 +135,9 @@ describe('web driver io task 3', async () => {
         await htmlDesignButton.waitForClickable();
         await htmlDesignButton.click();
 
-        const iframe5 = await $('//iframe[@class="mail-clean-html"]');
-        await iframe5.waitForExist();
-        await browser.switchToFrame(iframe5);
+        const iframe4 = await pages('email').iframe4;
+        await iframe4.waitForExist();
+        await browser.switchToFrame(iframe4);
         
         const emailAmount = await pages('email').emailAmount;
         emailAmount.waitForExist();
