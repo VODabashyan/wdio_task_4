@@ -21,74 +21,74 @@ describe('web driver io task 3', async () => {
 
         //Number of instances: 4
         await pages('home').topMenu.computeEngine.click();
-        await pages('calculator').numberOfInstancesInput.setValue(4);
+        await pages('calculator').computeEngine.numberOfInstancesInput.setValue(4);
 
         //Operating System / Software: Free: Debian, CentOS, CoreOS, Ubuntu, or another User-Provided OS
-        await pages('calculator').operatingSystemBar.click();
-        const operatingSystemOption = await pages('calculator').operatingSystemOption;
+        await pages('calculator').computeEngine.operatingSystemBar.click();
+        const operatingSystemOption = await pages('calculator').computeEngine.operatingSystemOption;
         await operatingSystemOption.waitForClickable();
         await operatingSystemOption.click();
 
         //Provisioning model: Regular
-        await pages('calculator').provisioningModelBar.click();
-        const provisioningModelOption = await pages('calculator').provisioningModelOption;
+        await pages('calculator').computeEngine.provisioningModelBar.click();
+        const provisioningModelOption = await pages('calculator').computeEngine.provisioningModelOption;
         await provisioningModelOption.waitForClickable();
         await provisioningModelOption.click();
 
         //Machine Family: General purpose 
-        await pages('calculator').machineFamilyBar.click();
-        const machineFamilyOption = await pages('calculator').machineFamilyOption;
+        await pages('calculator').computeEngine.machineFamilyBar.click();
+        const machineFamilyOption = await pages('calculator').computeEngine.machineFamilyOption;
         await machineFamilyOption.waitForClickable();
         await machineFamilyOption.click();
 
         //Series: N1
-        await pages('calculator').seriesBar.click();
-        const seriesOption = await pages('calculator').seriesOption;
+        await pages('calculator').computeEngine.seriesBar.click();
+        const seriesOption = await pages('calculator').computeEngine.seriesOption;
         await seriesOption.waitForClickable();
         await seriesOption.click();
 
         //Machine type: n1-standard-8 (vCPUs: 8, RAM: 30 GB)
-        await pages('calculator').machineTypeBar.click();
-        const machineTypeOption = await pages('calculator').machineTypeOption;
+        await pages('calculator').computeEngine.machineTypeBar.click();
+        const machineTypeOption = await pages('calculator').computeEngine.machineTypeOption;
         await machineTypeOption.waitForClickable();
         await machineTypeOption.click();
 
         //Select “Add GPUs“
-        await pages('calculator').addGpuToggle.click();
+        await pages('calculator').computeEngine.addGpuToggle.click();
 
         //GPU type: NVIDIA Tesla V100
-        await pages('calculator').GpuTypeBar.click();
-        const GpuTypeOption = await pages('calculator').GpuTypeOption;
+        await pages('calculator').computeEngine.GpuTypeBar.click();
+        const GpuTypeOption = await pages('calculator').computeEngine.GpuTypeOption;
         await GpuTypeOption.waitForClickable();
         await GpuTypeOption.click();
 
         //Number of GPUs: 1
-        await pages('calculator').numberOfGpusBar.click();
-        const numberOfGpus = await pages('calculator').numberOfGpusOption;
+        await pages('calculator').computeEngine.numberOfGpusBar.click();
+        const numberOfGpus = await pages('calculator').computeEngine.numberOfGpusOption;
         await numberOfGpus.waitForClickable();
         await numberOfGpus.click();
 
         //Local SSD: 2x375 Gb
-        await pages('calculator').localSsdOBar.click();
-        const localSsdOption = await pages('calculator').localSsdOption;
+        await pages('calculator').computeEngine.localSsdOBar.click();
+        const localSsdOption = await pages('calculator').computeEngine.localSsdOption;
         await localSsdOption.waitForClickable();
         await localSsdOption.click();
 
         //Datacenter location: Frankfurt (europe-west3)
         //I selected Netherlands as NVIDIA Tesla V100 wasn't available for Frankfurt.
-        await pages('calculator').datacenterLocationBar.click();
-        const datacenterLocationOption = await pages('calculator').datacenterLocationOption;
+        await pages('calculator').computeEngine.datacenterLocationBar.click();
+        const datacenterLocationOption = await pages('calculator').computeEngine.datacenterLocationOption;
         await datacenterLocationOption.waitForClickable();
         await datacenterLocationOption.click();
 
         //Committed usage: 1 Year
-        await pages('calculator').committedUsageBar.click();
-        const committedUsageOption = await pages('calculator').committedUsageOption;
+        await pages('calculator').computeEngine.committedUsageBar.click();
+        const committedUsageOption = await pages('calculator').computeEngine.committedUsageOption;
         await committedUsageOption.waitForClickable();
         await committedUsageOption.click();
 
         //Click 'Add to Estimate'.
-        const addToEstimateButton = await pages('calculator').addToEstimateButton;
+        const addToEstimateButton = await pages('calculator').computeEngine.addToEstimateButton;
         await addToEstimateButton.waitForClickable();
         await addToEstimateButton.click();
 
