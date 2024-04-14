@@ -30,6 +30,15 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
+
+    "suites": {
+        smoke: [
+            [
+                "./../tests/task4.tests.js"
+            ]
+        ],
+        regression: ["./../tests/**/*.tests.js"]
+    },
     //
     // ============
     // Capabilities

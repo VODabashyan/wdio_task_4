@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run ./src/config/wdio.conf.js",
+    "smoke":"wdio run ./src/config/wdio.conf.js --suite smoke",
+    "regression":"wdio run ./src/config/wdio.conf.js --suite regression",
     "wdio:firefox": "wdio run ./src/config/wdio.firefox.conf.js",
     "wdio:edge": "wdio run ./src/config/wdio.edge.conf.js"
   },
