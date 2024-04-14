@@ -1,4 +1,4 @@
-const TopMenuComponent = require("../components/common/topmenu.component");
+const TopMenuComponent = require("../components/calculator/topmenu.component");
 const BasePage = require("./base.page");
 
 class HomePage extends BasePage {

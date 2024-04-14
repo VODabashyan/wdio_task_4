@@ -93,13 +93,13 @@ describe('web driver io task 3', async () => {
         await addToEstimateButton.click();
 
         //Check the price is calculated in the right section of the calculator. There is a line “Total Estimated Cost: USD ${amount} per 1 month” 
-        const totalCost = pages('calculator').totalCost;
+        const totalCost = pages('calculator').estimate.totalCost;
         await totalCost.isExisting();
         const totalCostAmount = await totalCost.getText();
         console.log(totalCostAmount);
 
         //Select 'EMAIL ESTIMATE'.
-        const emailEstimateButton = await pages('calculator').emailEstimateButton;
+        const emailEstimateButton = await pages('calculator').estimate.emailEstimateButton;
         await emailEstimateButton.waitForClickable();
         await emailEstimateButton.click();
 
