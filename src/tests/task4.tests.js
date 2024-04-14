@@ -105,13 +105,6 @@ describe('web driver io task 3', async () => {
 
         //In a new tab, open https://yopmail.com/ or a similar temporary email–generating service.
         await pages('email').open();
-        const adKiller = await $("body");
-        await adKiller.doubleClick();
-
-        //Generate a random email.
-        const generateOption = await pages('email').generateOption;
-        await generateOption.waitForClickable();
-        await generateOption.click();
 
         //Copy the email generated in yopmail.com (or any other service).
         const copyEmail = await pages('email').copyEmail;
@@ -135,21 +128,23 @@ describe('web driver io task 3', async () => {
         await sendEmailButton.click();
 
         //Wait for the cost estimate email and check that the emailed 'Total Estimated Monthly Cost' matches the result in the calculator.
-        await browser.switchWindow('yopmail.com/');
-        const checkInbox = await pages('email').checkInbox;
-        await checkInbox.waitForClickable();
-        await browser.pause(10000);
-        await checkInbox.click();
-        const iframe5 = await $('#ifmail');
+        await browser.switchWindow('dropmail.me');
+    
+        const htmlDesignButton = await pages('email').htmlDesignButton;
+        await htmlDesignButton.waitForClickable();
+        await htmlDesignButton.click();
+
+        const iframe5 = await $('//iframe[@class="mail-clean-html"]');
         await iframe5.waitForExist();
         await browser.switchToFrame(iframe5);
-        const emailAmount = await pages('email').emailAmount;;
+        
+        const emailAmount = await pages('email').emailAmount;
         emailAmount.waitForExist();
         const emailCostAmount = await emailAmount.getText();
         console.log(emailCostAmount);
-        //await expect(totalCostAmount).toHaveTextContaining(emailCostAmount);
         console.log(await totalCostAmount.includes(emailCostAmount));
 
-        await browser.pause(1000)
+
+        //await browser.pause(1000)
     });
 });
