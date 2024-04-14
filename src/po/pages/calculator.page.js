@@ -36,7 +36,7 @@ class CalculatorPage extends BasePage {
     get sendEmailButton() { return $("//button[normalize-space()='Send Email']") }
 
     //Top menu component 
-    get computeEngine() { return $("//md-tab-item[@id='tab-item-1']") }
+    get computeEngine() { return $(".md-paginated md-pagination-wrapper #tab-item-1") }
 }   
 
 module.exports = CalculatorPage;

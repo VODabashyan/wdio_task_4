@@ -20,7 +20,7 @@ describe('web driver io task 3', async () => {
         await browser.switchToFrame(iframe2);
 
         //Number of instances: 4
-        await pages('calculator').computeEngine.click();
+        await pages('home').topMenu.computeEngine.click();
         await pages('calculator').numberOfInstancesInput.setValue(4);
 
         //Operating System / Software: Free: Debian, CentOS, CoreOS, Ubuntu, or another User-Provided OS

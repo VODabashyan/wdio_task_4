@@ -1,8 +1,10 @@
+const TopMenuComponent = require("../components/common/topmenu.component");
 const BasePage = require("./base.page");
 
 class HomePage extends BasePage {
     constructor() {
         super('https://cloud.google.com/');
+        this.topMenu = new TopMenuComponent;
     }
 
     get searchBar() { return $('.YSM5S') }
