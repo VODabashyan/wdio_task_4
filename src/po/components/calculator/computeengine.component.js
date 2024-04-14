@@ -24,7 +24,6 @@ class ComputeEngine {
     get committedUsageOption() { return $("//md-option[@id='select_option_138']") }
     get addToEstimateButton() { return $("//form[@name='ComputeEngineForm']//button[@type='button'][normalize-space()='Add to Estimate']") }
 
-
 }
 
 module.exports = ComputeEngine;

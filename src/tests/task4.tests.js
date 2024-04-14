@@ -117,13 +117,13 @@ describe('web driver io task 3', async () => {
         await browser.switchToFrame(iframe3[0]);
         const iframe4 = await browser.findElements('css selector', 'iframe')
         await browser.switchToFrame(iframe4[0]);
-        const emailField = await pages('calculator').emailField;
+        const emailField = await pages('calculator').emailForm.emailField;
         await emailField.waitForClickable();
         await emailField.click();
         await browser.keys(['Control', 'v', 'NULL']);
 
         //Select 'EMAIL ESTIMATE'.    
-        const sendEmailButton = await pages('calculator').sendEmailButton;
+        const sendEmailButton = await pages('calculator').emailForm.sendEmailButton;
         await sendEmailButton.waitForClickable();
         await sendEmailButton.click();
 
